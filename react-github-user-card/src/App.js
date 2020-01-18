@@ -8,7 +8,8 @@ class App extends React.Component {
     avatarurl: "",
     publicrepos: 0,
     followers: 0,
-    following: 0
+    following: 0,
+    followerdata: []
   };
 
   componentDidMount() {
@@ -25,7 +26,15 @@ class App extends React.Component {
           following: user.following
         });
       })
-      .catch(err => console.log("Unable to fetch data, error: ", err));
+      .catch(err => console.log("Unable to fetch user data, error: ", err));
+
+    fetch("https://api.github.com/users/ccsmith13/followers")
+      .then(res => res.json())
+      .then(userfollower => {
+        console.log("fetched follower data", userfollower);
+        this.setState({ followerdata: userfollower })
+      })
+      .catch(err => console.log("Unable to fetch follower data, error: ", err))
   }
 
   render() {
@@ -38,6 +47,7 @@ class App extends React.Component {
           publicrepos={this.state.publicrepos}
           followers={this.state.followers}
           following={this.state.following}
+          followerdata={this.state.followerdata}
         />
       </div>
     );
