@@ -1,6 +1,18 @@
 import React from 'react';
 import UserCard from './components/UserCard';
-import './App.css';
+import styled from "styled-components";
+
+const Title = styled.h1`
+  font-size: 3.5rem;
+  text-align: center;
+  padding-top: 8%;
+  padding-bottom: 4%;
+  font-family: 'Jura', sans-serif;
+`;
+const AppContainer = styled.div`
+  background: #2C0735;
+  color: white;
+`;
 
 class App extends React.Component {
   state = {
@@ -39,8 +51,8 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
-        <h1>GitHub User Card Project</h1>
+      <AppContainer>
+        <Title>GitHub User Card</Title>
         <UserCard
           username={this.state.username}
           avatarurl={this.state.avatarurl}
@@ -49,7 +61,7 @@ class App extends React.Component {
           following={this.state.following}
           followerdata={this.state.followerdata}
         />
-      </div>
+      </AppContainer>
     );
   }
 };

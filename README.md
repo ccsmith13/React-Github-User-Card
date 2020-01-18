@@ -29,9 +29,9 @@ Follow these steps for completing your project.
 
 ## Minimum Viable Product
 
-- [ ] Fetch data from the Github API for a Github user
-- [ ] Display the user data on the DOM
-- [ ] Use class components when you need to hold any state or use any lifecycle methods
+- [X] Fetch data from the Github API for a Github user
+- [X] Display the user data on the DOM
+- [X] Use class components when you need to hold any state or use any lifecycle methods
 
 ## Planning your App
 
@@ -56,8 +56,8 @@ When you have those completed, you're ready to start coding!
 ## STEP 3 - Fetch the User's Followers
 
 - When your component mounts, you will also fetch the user's followers using this endpoint:
-  https://api.github.com/users/< Your github name >/followers
-- Set that data to state as well, and display the data in your app
+  https://api.github.com/users/< Your github name >/followers DONE
+- Set that data to state as well, and display the data in your app DONE
 
 ## STEP 4 - Style the User Card
 
@@ -67,7 +67,19 @@ When you have those completed, you're ready to start coding!
 
 ## STEP 5 - Project Retrospective
 
-Now that you have completed the MVP, I want you to think about the process it took you to get here. Is there anything you wish you had planned better? Anything you would do differently? Now take a minute think about how you would accomplish these same objectives with function components and hooks. You have experience with both formats now, so you can form opinions, but more importantly, you can back up those opinions. That's a really exciting level to be at! If you have time now, go ahead and move onto the stretch problems.
+Now that you have completed the MVP, I want you to think about the process it took you to get here. 
+
+Is there anything you wish you had planned better? 
+// I don't think so...I feel like this project was very straightforward //
+
+Anything you would do differently? 
+// Improve the styling //
+
+Now take a minute think about how you would accomplish these same objectives with function components and hooks. You have experience with both formats now, so you can form opinions, but more importantly, you can back up those opinions. 
+
+// I like the class component writing style better than the first way we learned to write functional components //
+
+That's a really exciting level to be at! If you have time now, go ahead and move onto the stretch problems.
 
 ## Stretch Problems
 
