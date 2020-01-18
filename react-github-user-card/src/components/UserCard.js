@@ -1,5 +1,7 @@
 import React from "react";
 import styled from "styled-components";
+import GitHubCalendar from "react-github-calendar";
+import ReactTooltip from "react-tooltip";
 
 const UserProfilePic = styled.img`
     width: 25%;
@@ -53,7 +55,9 @@ const FollowerWrapper = styled.div`
     margin-bottom: 2%;
 `;
 
+
 function UserCard(props) {
+    console.log(props.username)
     return (
         <div>
             <UserContainer>
@@ -63,7 +67,11 @@ function UserCard(props) {
                     <p>Number of Public Repos: {props.publicrepos}</p>
                     <p>Followers: {props.followers}</p>
                     <p>Following: {props.following}</p>
-
+                    <div>
+                        <GitHubCalendar username={props.username}>
+                            <ReactTooltip delayShow={50} html />
+                        </GitHubCalendar>
+                    </div>
                 </UserDataContainer>
             </UserContainer>
             <FollowerWrapper>
