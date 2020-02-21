@@ -12,13 +12,13 @@ Commit your code regularly and meaningfully. This helps both you and your team l
 
 ## Project Set Up
 
-- [ ] Create a forked copy of this project.
-- [ ] Add your team lead as collaborator on Github.
-- [ ] Clone your OWN version of the repository in your terminal
-- [ ] Use CRA to create a new React app in this repository
-- [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
-- [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
-- [ ] Push commits: git push origin `<firstName-lastName>`.
+- [X] Create a forked copy of this project.
+- [X] Add your team lead as collaborator on Github.
+- [X] Clone your OWN version of the repository in your terminal
+- [X] Use CRA to create a new React app in this repository
+- [X] Create a new branch: git checkout -b `<firstName-lastName>`.
+- [X] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
+- [X] Push commits: git push origin `<firstName-lastName>`.
 
 Follow these steps for completing your project.
 
@@ -29,9 +29,9 @@ Follow these steps for completing your project.
 
 ## Minimum Viable Product
 
-- [ ] Fetch data from the Github API for a Github user
-- [ ] Display the user data on the DOM
-- [ ] Use class components when you need to hold any state or use any lifecycle methods
+- [X] Fetch data from the Github API for a Github user
+- [X] Display the user data on the DOM
+- [X] Use class components when you need to hold any state or use any lifecycle methods
 
 ## Planning your App
 
@@ -44,20 +44,20 @@ When you have those completed, you're ready to start coding!
 ## STEP 1 - Fetch the User Data
 
 - When your component mounts, send a GET request to the following URL (replacing the palceholder with your Github name):
-  - https://api.github.com/users/<your name>
-- After you fetch your data, set it to state
+  - https://api.github.com/users/<your name>  DONE
+- After you fetch your data, set it to state DONE
 
 ## STEP 2 - Display the User Data
 
-- Pass the data to the component that will be displaying it
-- Build out a user card using the data that the Github API returns to you
-  - You may reference your old project for this, or you may wish to build this from scratch yourself
+- Pass the data to the component that will be displaying it DONE
+- Build out a user card using the data that the Github API returns to you DONE
+  - You may reference your old project for this, or you may wish to build this from scratch yourself FROM SCRATCH :)
 
 ## STEP 3 - Fetch the User's Followers
 
 - When your component mounts, you will also fetch the user's followers using this endpoint:
-  https://api.github.com/users/< Your github name >/followers
-- Set that data to state as well, and display the data in your app
+  https://api.github.com/users/< Your github name >/followers DONE
+- Set that data to state as well, and display the data in your app DONE
 
 ## STEP 4 - Style the User Card
 
@@ -67,12 +67,25 @@ When you have those completed, you're ready to start coding!
 
 ## STEP 5 - Project Retrospective
 
-Now that you have completed the MVP, I want you to think about the process it took you to get here. Is there anything you wish you had planned better? Anything you would do differently? Now take a minute think about how you would accomplish these same objectives with function components and hooks. You have experience with both formats now, so you can form opinions, but more importantly, you can back up those opinions. That's a really exciting level to be at! If you have time now, go ahead and move onto the stretch problems.
+Now that you have completed the MVP, I want you to think about the process it took you to get here. 
+
+Is there anything you wish you had planned better? 
+// I don't think so...I feel like this project was very straightforward //
+
+Anything you would do differently? 
+// Improve the styling //
+
+Now take a minute think about how you would accomplish these same objectives with function components and hooks. You have experience with both formats now, so you can form opinions, but more importantly, you can back up those opinions. 
+
+// I like the class component writing style better than the first way we learned to write functional components //
+
+That's a really exciting level to be at! If you have time now, go ahead and move onto the stretch problems.
 
 ## Stretch Problems
 
 After finishing your required elements, you can push your work further. These goals may or may not be things you have learned in this module but they build on the material you just studied. Time allowing, stretch your limits and see if you can deliver on the following optional goals:
 
-- Build a form that allows you to search for different Github users. When the form is submitted, use `componentDidUpdate` to fetch the data for the user you typed in. Set that new user's data to state to trigger the component to rerender and display your new user. Don't forget to fetch their followers as well.
+- Build a form that allows you to search for different Github users. When the form is submitted, use `componentDidUpdate` to fetch the data for the user you typed in. Set that new user's data to state to trigger the component to rerender and display your new user. Don't forget to fetch their followers as well. DONE 
 
 - Look into adding your GitHub contribution graph. There are a number of different ways of doing this, this Stack Overflow discussion will get you started: https://stackoverflow.com/questions/34516592/embed-github-contributions-graph-in-website
+DONE
